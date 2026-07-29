@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>Musty</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Bottom nav (mobile-first) -->
+  <nav id="bottom-nav" class="bottom-nav hidden">
+    <button data-view="feed" class="nav-btn" aria-label="Feed">
+      <svg viewBox="0 0 24 24"><path d="M3 11L12 4l9 7M5 10v9a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1v-9" /></svg>
+      <span>Feed</span>
+    </button>
+    <button data-view="reels" class="nav-btn" aria-label="Reels">
+      <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8l6 4-6 4V8z"/></svg>
+      <span>Reels</span>
+    </button>
+    <button data-view="new-post" class="nav-btn nav-btn-add" aria-label="New Post">
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <button data-view="messages" class="nav-btn" aria-label="Messages">
+      <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+      <span>DMs</span>
+    </button>
+    <button data-view="profile" class="nav-btn" aria-label="Profile">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <span>Profile</span>
+    </button>
+  </nav>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
